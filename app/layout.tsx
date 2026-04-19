@@ -30,7 +30,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <TooltipProvider>
           <div className="flex h-full">
             <Sidebar />
-            <main className="flex-1 ml-48 overflow-auto">{children}</main>
+            <main className="ml-0 flex-1 overflow-auto pt-11 md:ml-48 md:pt-0">
+              {children}
+            </main>
           </div>
         </TooltipProvider>
       </body>
